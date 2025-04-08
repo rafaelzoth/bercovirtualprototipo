@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Berço Virtual</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar right-sidebar">
+      <h1>Berço Virtual</h1>
+      <nav>
+        <ul>
+          <li onclick="showSection('home')">HOME</li>
+          <li onclick="showSection('perfil')">PERFIL DO BEBÊ</li>
+          <li onclick="showSection('monitoramento')">MONITORAMENTO DO BEBÊ</li>
+          <li onclick="showSection('cronograma')">CRONOGRAMA</li>
+          <li onclick="showSection('experiencias')">EXPERIÊNCIAS DOS PAIS</li>
+          <li onclick="showSection('configuracoes')">CONFIGURAÇÕES</li>
+        </ul>
+      </nav>
+    </aside>
+    
+    <main class="main-content">
+      <section id="home" class="content-section active">
+        <div class="month-header">
+          <h2>Abril 2025</h2>
+          <div class="search-container">
+            <input type="text" placeholder="Pesquisar" class="search">
+          </div>
+        </div>
+        
+        <div class="calendar">
+          <table>
+            <thead>
+              <tr>
+                <th>Dom</th>
+                <th>Seg</th>
+                <th>Ter</th>
+                <th>Qua</th>
+                <th>Qui</th>
+                <th>Sex</th>
+                <th>Sáb</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td></td>
+                <td></td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+                <td>11</td>
+                <td>12</td>
+              </tr>
+              <tr>
+                <td>13</td>
+                <td>14</td>
+                <td>15</td>
+                <td>16</td>
+                <td>17</td>
+                <td>18</td>
+                <td>19</td>
+              </tr>
+              <tr>
+                <td>20</td>
+                <td>21</td>
+                <td>22</td>
+                <td>23</td>
+                <td>24</td>
+                <td>25</td>
+                <td>26</td>
+              </tr>
+              <tr>
+                <td>27</td>
+                <td>28</td>
+                <td>29</td>
+                <td>30</td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        
+        <div class="updates-container">
+          <h3>Últimas atualizações sobre o bebê</h3>
+          <ul class="updates-list">
+            <li>A</li>
+            <li>B</li>
+            <li>C</li>
+            <li>D</li>
+          </ul>
+        </div>
+        
+        <div class="reminders-container">
+          <div class="reminder-box">
+            <h3>Lembretes</h3>
+          </div>
+          <div class="reminder-box">
+            <h3>Lembretes</h3>
+          </div>
+          <div class="reminder-box">
+            <h3>Lembretes</h3>
+          </div>
+          <div class="reminder-box">
+            <h3>Lembretes</h3>
+          </div>
+        </div>
+      </section>
+
+      <section id="perfil" class="content-section">
+        <h1>Sobre o bebê</h1>
+        <p>Informações do bebê...</p>
+      </section>
+
+      <section id="monitoramento" class="content-section">
+        <h1>Monitoramento</h1>
+        <p>Detalhes sobre saúde, sono, alimentação...</p>
+      </section>
+
+      <section id="cronograma" class="content-section">
+        <h1>Cronograma</h1>
+        <p>Agenda de atividades e eventos...</p>
+      </section>
+
+      <section id="experiencias" class="content-section">
+        <h1>Experiências dos pais</h1>
+        <p>Relatos e dicas de outros pais...</p>
+      </section>
+
+      <section id="configuracoes" class="content-section">
+        <h1>Configurações</h1>
+        <p>Preferências e personalizações...</p>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
